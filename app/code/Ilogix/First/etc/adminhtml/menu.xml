@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Ilogix_First::greetings"
+             title="Greetings"
+             translate="title"
+             module="Ilogix_First"
+             parent="Magento_Backend::content"
+             sortOrder="99999"
+             dependsOnModule="Ilogix_First"
+             resource="Ilogix_First::greetings"/>
+        <add id="Ilogix_First::greetings_helloworld"
+             title="Hello World"
+             translate="title"
+             module="Ilogix_First"
+             parent="Ilogix_First::greetings"
+             sortOrder="0"
+             dependsOnModule="Ilogix_First"
+             action="First/helloworld"
+             resource="Ilogix_First::greetings"/>
+    </menu>
+</config>
